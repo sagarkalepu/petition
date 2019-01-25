@@ -11,7 +11,11 @@
                 <div class="card-action" *ngFor="let polling of poll.polls">
                   <p>{{polling.description}}</p>
                   <p>{{polling.votes}}</p>
-                  <button class="btn waves-effect waves-light" type="submit" name="action" (click)="upVote(polling.id)">Upvote</button>
+                  <button class="btn waves-effect waves-light" name="action" (click)="upVote(polling.id)">Upvote</button>
+                </div>
+                
+                <div class="card-action">
+                  <svg #svg></svg>
                 </div>
               </div>
             </div>

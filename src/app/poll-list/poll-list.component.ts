@@ -14,7 +14,6 @@ export class PollListComponent implements OnInit {
 
   ngOnInit() {
     this.allPolls = this.allPollsService.getAll();
-    console.log(this.allPolls[0].title);
   }
 
 }
